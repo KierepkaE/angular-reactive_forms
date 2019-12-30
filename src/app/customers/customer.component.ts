@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm, FormGroup, FormControl, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { Customer } from './customer';
 
 @Component({
@@ -21,6 +21,7 @@ export class CustomerComponent implements OnInit {
       sendCatalog: true
     });
   }
+  
   save() {
     console.log(this.customerForm);
     console.log('Saved: ' + JSON.stringify(this.customerForm));
